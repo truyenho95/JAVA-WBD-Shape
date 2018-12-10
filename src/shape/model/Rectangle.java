@@ -46,9 +46,13 @@ public class Rectangle extends Shape {
   public String toString() {
     return "A Rectangle with width="
       + getWidth()
-      + " and length="
+      + ", length= "
       + getLength()
-      + ", which is a subclass of "
+      + ", Area= "
+      + getArea()
+      + ", Perimeter= "
+      + getPerimeter()
+      + " and which is a subclass of "
       + super.toString();
   }
 }
