@@ -1,6 +1,8 @@
 package shape.model;
 
-public class Shape {
+import colorable.model.Colorable;
+
+public class Shape implements Colorable {
   private String color = "green";
   private boolean filled = true;
 
@@ -34,5 +36,10 @@ public class Shape {
       + getColor()
       + " and "
       + (isFilled() ? "filled" : "not filled");
+  }
+
+  @Override
+  public String howToColor() {
+    return "Color all four sides.";
   }
 }
