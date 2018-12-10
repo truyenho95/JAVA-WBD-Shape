@@ -55,4 +55,10 @@ public class Rectangle extends Shape {
       + " and which is a subclass of "
       + super.toString();
   }
+
+  @Override
+  public void resize(double percent) {
+    this.length *= percent/100;
+    this.width *= percent/100;
+  }
 }

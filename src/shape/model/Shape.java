@@ -1,8 +1,9 @@
 package shape.model;
 
 import colorable.model.Colorable;
+import resizeable.model.Resizeable;
 
-public class Shape implements Colorable {
+public abstract class Shape implements Colorable, Resizeable {
   private String color = "green";
   private boolean filled = true;
 
